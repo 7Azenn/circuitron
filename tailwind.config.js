@@ -1,0 +1,93 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        graphite: {
+          DEFAULT: '#0B0F0E',
+          deep: '#070A09',
+          surface: '#121816',
+          card: '#161E1B',
+          panel: '#1A2320',
+          border: '#232D2A',
+          'border-light': '#323E3B',
+        },
+        offwhite: {
+          DEFAULT: '#F2F2EA',
+          dim: '#D1D1C8',
+          muted: '#A9A9A0',
+          card: '#E8E8E0',
+          surface: '#F8F8F2',
+        },
+        lime: {
+          DEFAULT: '#C6F36B',
+          hover: '#B5E856',
+          dark: '#8EBB3E',
+          tint: 'rgba(198, 243, 107, 0.08)',
+          'tint-strong': 'rgba(198, 243, 107, 0.16)',
+        },
+        circuitron: {
+          DEFAULT: '#24467F',
+          light: '#3662A6',
+          dark: '#162C52',
+          surface: '#101B30',
+          panel: '#0D172A',
+          border: '#1F3C6D',
+          'border-light': '#2E5597',
+          tint: 'rgba(36, 70, 127, 0.15)',
+          'tint-strong': 'rgba(36, 70, 127, 0.3)',
+        },
+        navy: {
+          DEFAULT: '#24467F',
+          light: '#3662A6',
+          dark: '#162C52',
+          surface: '#101B30',
+          deep: '#0B1322',
+        },
+        cyan: {
+          DEFAULT: '#12B5E2',
+          hover: '#0FA2CB',
+          bright: '#29C9F5',
+          light: '#5FD4F5',
+          dark: '#0C7E9D',
+          surface: '#081D29',
+          tint: 'rgba(18, 181, 226, 0.12)',
+          'tint-strong': 'rgba(18, 181, 226, 0.22)',
+          glow: 'rgba(18, 181, 226, 0.35)',
+        },
+        steel: {
+          DEFAULT: '#747C79',
+          light: '#98A19E',
+          dark: '#454C4A',
+          muted: '#2E3533',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+        mono: ['"IBM Plex Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+      },
+      letterSpacing: {
+        tighter: '-0.04em',
+        tight: '-0.02em',
+        wide: '0.04em',
+        wider: '0.08em',
+        widest: '0.15em',
+      },
+      boxShadow: {
+        'subtle': '0 1px 3px 0 rgba(0, 0, 0, 0.3)',
+        'industrial': '0 4px 20px -2px rgba(0, 0, 0, 0.5)',
+        'lime-sm': '0 0 15px -3px rgba(198, 243, 107, 0.3)',
+        'cyan-sm': '0 0 15px -3px rgba(18, 181, 226, 0.35)',
+        'cyan-glow': '0 0 25px -2px rgba(18, 181, 226, 0.45)',
+        'circuitron-sm': '0 0 15px -3px rgba(36, 70, 127, 0.4)',
+      },
+    },
+  },
+  plugins: [],
+}
